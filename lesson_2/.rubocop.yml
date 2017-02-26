@@ -52,11 +52,6 @@ Style/DoubleNegation:
   Description: 'Checks for uses of double negation (!!).'
   Enabled: false
 
-  Style/TrailingWhitespace:
-  Description: 'Avoid trailing whitespace.'
-  StyleGuide: '#no-trailing-whitespace'
-  Enabled: false
-
 Style/EmptyLineBetweenDefs:
   Enabled: true
   AllowAdjacentOneLineDefs: true
