@@ -90,30 +90,33 @@ munsters = {
 }
 
 def mess_with_demographics(demo_hash)
-  new_hash = demo_hash.values.each do |family_member|
-    family_member["age"] += 42
-    family_member["gender"] = "other"
+  new_hash = {}
+  demo_hash.values.each do |family_member|
+    new_hash["age"] = family_member["age"] + 42
+    new_hash["gender"] = "other"
   end
   new_hash
 end
 
-mess_with_demographics(munsters)
+new_munsters = mess_with_demographics(munsters)
+
+puts new_munsters
 puts munsters
+puts new_munsters.object_id
+puts munsters.object_id
 
-munsters = {
-  "Herman" => { "age" => 32, "gender" => "male" },
-  "Lily" => { "age" => 30, "gender" => "female" },
-  "Grandpa" => { "age" => 402, "gender" => "male" },
-  "Eddie" => { "age" => 10, "gender" => "male" },
-  "Marilyn" => { "age" => 23, "gender" => "female"}
-}
+# question 9
 
+# "paper" is the result of the following call
 
-def mess_with_demographics(demo_hash)
-  demo_hash.values.each do |family_member|
-    family_member["age"] += 42
-    family_member["gender"] = "other"
-  end
-end
+# question 10
+
+# the output will be "no"
+# The foo method will always be "yes"
+# "yes" does not equal no so it is false
+# the  right of the ternary operator is false
+# so "no" is returned
+# (param = "no") is a default parameter
+# in case no argument was passed into the method
 
 
