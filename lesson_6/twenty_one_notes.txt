@@ -1,0 +1,44 @@
+# start with a normal 52 card deck
+# consists of 4 suits (hearts, diamond, clubs, and spades)
+# 13 values (2, 3, 4, 5, 6, 7, 8, 9, 10, jack, queen, king, ace)
+# goal is to get as close to 21 as possible without going over
+# if you go over 21, its a bust and you lose
+# game consists of a dealer and a player
+# both players initially dealt two cards, but can only see one of dealers cards
+# numbers 2 through 10 are worth there face value
+# jack, queen and king are each worth 10
+# ace can be worth 1 or 11
+# ace value is determined each time a new card is drawn from the deck
+# if hand contains 2, ace, and 5 then total value is 18
+# account for multiple aces
+# sum of 2 + 11 + 5 + 11 exceeds 21 so one of aces must be worth 1
+# player turn
+# player goes first and can decide to hit or stay
+# hit means the player will ask for another card
+# if the total exceeds 21 then the player busts or loses
+# decision to hit or stay will depend on what the players cards are
+# and what the player thinks the dealer has
+# player can continue to hit as many times as they want
+# turn is over when the player either busts or stays
+# if player busts, game is over and dealer won
+# dealer turn
+# when the player stays, its the dealers turn
+# the dealer must follow a strict rule for determining
+# whether to hit or stay
+# hit until the total is at least 17
+# if dealer busts then the player wins
+# when both player and dealer stay, its time to compare
+# the total value of the cards and see who has the highest value
+# 1. Initialize deck
+# 2. Deal cards to player and dealer
+# 3. Player turn : hit or stay
+#	- repeat until bust or "stay"
+# 4. If player bust, dealer wins
+# 5. Dealer turn: hit or stay
+# - repeat until total >= 17
+# 6. If dealer bust, player wins.
+# 7. Compare cards and declare winner.
+# our deck
+
+
+# calculating aces
